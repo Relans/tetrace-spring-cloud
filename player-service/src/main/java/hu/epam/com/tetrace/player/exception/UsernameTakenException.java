@@ -9,6 +9,6 @@ public class UsernameTakenException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 
 	public UsernameTakenException(String username) {
-		super(String.format("Username {} is already taken", username));
+		super(String.format("Username %s is already taken", username));
 	}
 }
