@@ -9,5 +9,4 @@ import hu.epam.com.tetrace.lobby.model.Lobby;
 
 @Repository
 public interface LobbyRepository extends CrudRepository<Lobby, BigInteger> {
-
 }

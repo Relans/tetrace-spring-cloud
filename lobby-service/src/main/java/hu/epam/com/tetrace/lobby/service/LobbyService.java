@@ -1,5 +1,7 @@
 package hu.epam.com.tetrace.lobby.service;
 
+import java.math.BigInteger;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,5 +20,9 @@ public class LobbyService {
 
 	public Iterable<Lobby> getLobbies() {
 		return lobbyRepository.findAll();
+	}
+
+	public BigInteger addPlayerToRandomOpenLobby(BigInteger playerId) {
+		return lobbyPlayerRepository.addPlayerToOpenLobby(playerId);
 	}
 }
